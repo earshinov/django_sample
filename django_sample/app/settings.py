@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'app',
     'queryset_annotate_with_lookup.apps.QuerysetAnnotateWithLookupConfig',
     'ordering_by_expression.apps.OrderingByExpressionConfig',
+    'model_validation_on_save.apps.ModelValidationOnSaveConfig',
 ]
 
 MIDDLEWARE = [
