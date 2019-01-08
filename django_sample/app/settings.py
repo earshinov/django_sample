@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'app',
-    'queryset_annotate_with_lookup.apps.QuerysetAnnotateWithLookupConfig'
+    'queryset_annotate_with_lookup.apps.QuerysetAnnotateWithLookupConfig',
+    'ordering_by_expression.apps.OrderingByExpressionConfig',
 ]
 
 MIDDLEWARE = [
