@@ -6,7 +6,7 @@ from rest_framework import fields, serializers, viewsets
 
 from .models import TestModel
 
-logger = logging.getLogger()
+logger = logging.getLogger(__name__)
 
 
 class TestModelSerializer(serializers.ModelSerializer):
