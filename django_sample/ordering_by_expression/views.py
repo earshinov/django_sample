@@ -6,7 +6,7 @@ from django.db.models import functions, aggregates
 from django_filters.rest_framework import DjangoFilterBackend, FilterSet
 from rest_framework import serializers, viewsets
 
-import django_ddf as ddf
+import ddl
 
 from .models import Order, OrderLine, Product
 
@@ -45,7 +45,7 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = ('id', 'user', 'created', 'submitted', 'order_lines')
 
 
-class OrderOrderingFilter(ddf.OrderingFilter):
+class OrderOrderingFilter(ddl.OrderingFilter):
 
     def __init__(self):
         super().__init__(fields={
